@@ -24,7 +24,7 @@ function showPosition(position) {
         "<br>Longitude: " + position.coords.longitude;
 
     if (findiflong(position.coords.latitude, position.coords.longitude) > 2)
-        alert("You are too far away!!!");
+        alert("Hey you seems to go out! Beaware to not take plastic bag from outside!!!");
 }
 
 
