@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(204, 255, 137);
+}
+
+.pp {
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+    margin: 2rem;
+}
+
+
+h1 {
+    margin: 2rem;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(255, 249, 249);
+}
+
+button {
+    margin: 2rem
+}
