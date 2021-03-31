@@ -1,0 +1,140 @@
+Started GET "/" for ::1 at 2021-03-31 18:25:18 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 457ms (Views: 17.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 18:42:18 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1915ms (Views: 1903.0ms)
+
+
+Started GET "/about" for ::1 at 2021-03-31 18:45:10 +0530
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 386ms (Views: 376.7ms)
+
+
+Started GET "/about" for ::1 at 2021-03-31 18:46:38 +0530
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 55.0ms)
+
+
+Started GET "/about" for ::1 at 2021-03-31 18:47:45 +0530
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 75ms (Views: 61.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2021-03-31 18:52:18 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 81ms (Views: 67.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2021-03-31 19:41:28 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (269.5ms)
+Completed 200 OK in 365ms (Views: 349.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2021-03-31 19:41:49 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 68ms (Views: 55.6ms)
+
+
+Started GET "/posts/new" for ::1 at 2021-03-31 19:43:10 +0530
+  
+SyntaxError (D:/My work/Blog - rails/simple_blog/app/controllers/posts_controller.rb:10: syntax error, unexpected ':', expecting ';' or '\n'
+    def create :
+               ^
+D:/My work/Blog - rails/simple_blog/app/controllers/posts_controller.rb:13: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/posts_controller.rb:10: syntax error, unexpected ':', expecting ';' or '\n'
+app/controllers/posts_controller.rb:13: syntax error, unexpected `end', expecting end-of-input
+Started GET "/posts/new" for ::1 at 2021-03-31 19:43:22 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 36.6ms)
+
+
+Started POST "/posts" for ::1 at 2021-03-31 19:43:25 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QvxRRNdya1YzSYqGrV35sGSnI62Lx4HBX4ARNIj5vcJkkrJLeUtYO7uZRY61AENmBx5D2OxELgxEHEG8oBSvPw==", "post"=>{"title"=>"sdsdf", "body"=>"dsfsdf"}, "commit"=>"Save Post"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms)
+
+
+Started POST "/posts" for ::1 at 2021-03-31 19:43:42 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QvxRRNdya1YzSYqGrV35sGSnI62Lx4HBX4ARNIj5vcJkkrJLeUtYO7uZRY61AENmBx5D2OxELgxEHEG8oBSvPw==", "post"=>{"title"=>"sdsdf", "body"=>"dsfsdf"}, "commit"=>"Save Post"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.3ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (271.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (121.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20210331141838)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210331141838"]]
+  [1m[35m (131.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-31 14:19:43.029248"], ["updated_at", "2021-03-31 14:19:43.029248"]]
+  [1m[35m (129.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/posts" for ::1 at 2021-03-31 19:50:14 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QvxRRNdya1YzSYqGrV35sGSnI62Lx4HBX4ARNIj5vcJkkrJLeUtYO7uZRY61AENmBx5D2OxELgxEHEG8oBSvPw==", "post"=>{"title"=>"sdsdf", "body"=>"dsfsdf"}, "commit"=>"Save Post"}
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 5.7ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/posts_controller.rb:12:in `create'
+Started POST "/posts" for ::1 at 2021-03-31 19:53:41 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QvxRRNdya1YzSYqGrV35sGSnI62Lx4HBX4ARNIj5vcJkkrJLeUtYO7uZRY61AENmBx5D2OxELgxEHEG8oBSvPw==", "post"=>{"title"=>"sdsdf", "body"=>"dsfsdf"}, "commit"=>"Save Post"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdsdf"], ["body", "dsfsdf"], ["created_at", "2021-03-31 14:23:41.803145"], ["updated_at", "2021-03-31 14:23:41.803145"]]
+  [1m[35m (200.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 323ms (ActiveRecord: 214.3ms)
+
+
+Started GET "/posts/1" for ::1 at 2021-03-31 19:53:42 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 381ms (Views: 220.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-31 19:56:33 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 204ms (Views: 169.5ms | ActiveRecord: 4.5ms)
+
+
